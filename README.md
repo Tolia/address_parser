@@ -8,7 +8,7 @@ Installation
 First start by adding this gem to your Gemfile:
 
 ``` ruby
-gem 'address_parser', git: 'Tolia/address_parser'
+gem 'address_parser', github: 'Tolia/address_parser'
 ```
 And then execute
 ```
