@@ -1,8 +1,11 @@
+require 'geocoder'
+
 module AddressParser
   class ToHash
 
-    def initialize address
+    def initialize address, params
       @address = address
+      @params  = params
     end
 
     def run
@@ -17,7 +20,7 @@ module AddressParser
     private
 
       def geocoder
-        Geocoder.search(@address, params: {countrycodes: "ru"}).first
+        Geocoder.search(@address, params: @params).first
       end
 
       def respond_components
