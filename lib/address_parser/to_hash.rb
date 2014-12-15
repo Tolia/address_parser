@@ -3,7 +3,7 @@ require 'geocoder'
 module AddressParser
   class ToHash
 
-    def initialize address, params
+    def initialize address, params={}
       @address = address
       @params  = params
     end
@@ -41,8 +41,8 @@ module AddressParser
         end 
       end
 
-      def route_to_hash address
-        { address: address }
+      def route_to_hash street
+        { street: street }
       end
 
       def parse_street_number matcher
