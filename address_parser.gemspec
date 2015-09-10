@@ -11,7 +11,8 @@ Gem::Specification.new do |s|
   s.email       = ["toliademidov@gmail.com"]
   s.homepage    = "TODO"
   s.summary     = "address parser"
-  s.description = "TODO: Description of AddressParser."
+  s.homepage    = "https://github.com/Tolia/address_parser"
+  s.description = "Description of AddressParser."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
